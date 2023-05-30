@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<launch>
-
-    <node name="simulated_robot_service" pkg="my_robot_control" type="simulated_robot_service"  output="screen"></node>
-    <node name="high_level_service_sim" pkg="my_robot_control" type="high_level_service_sim"  output="screen"></node>
-</launch>
