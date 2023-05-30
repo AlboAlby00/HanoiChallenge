@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <include file="$(find computer_vision)/launch/scanBlock.launch"></include>
+    <node name="simulated_robot_service" pkg="red_robot_utils" type="simulated_robot_service"  output="screen"></node>
+    <node name="pick_and_place_controller" pkg="robot_controllers" type="pickAndPlaceController"  output="screen"></node>
+    <node name="param_gui" pkg="rqt_reconfigure" type="rqt_reconfigure"  output="screen"></node>
+    
+</launch>

@@ -1,0 +1,5 @@
+---
+# the current peg for each disk (0, 1, or 2) in decreasing
+#                 order of size
+int64[] diskPositions
+

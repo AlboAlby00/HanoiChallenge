@@ -1,0 +1,4 @@
+---
+float64[3] rod_0_position
+float64[3] rod_1_position
+float64[3] rod_2_position

@@ -1,0 +1,5 @@
+# srv used to receive width and position of all the disks
+# format is disksWidth[rod][disk from botton]
+float64[] disksWidth
+# numberDisks[i] = number of disks currently at rod with index i
+int64[3] numberDisks 

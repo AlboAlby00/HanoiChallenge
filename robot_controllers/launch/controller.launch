@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <node name="simulated_robot_service" pkg="red_robot_utils" type="simulated_robot_service"  output="screen"></node>
+    <node name="controller" pkg="robot_controllers" type="controller"  output="screen"></node>
+    <node name="param_gui" pkg="rqt_reconfigure" type="rqt_reconfigure"  output="screen"></node>
+    
+</launch>

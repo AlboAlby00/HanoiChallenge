@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <include file="$(find hanoi_logic)/launch/test_hanoi_logic.launch" />
+    <include file="$(find computer_vision)/launch/rodsDetection.launch" />
+    <node name="simulated_robot_service" pkg="red_robot_utils" type="simulated_robot_service"  output="screen"></node>
+    <node name="hanoi_controller" pkg="robot_controllers" type="hanoiController"  output="screen"></node>
+    <node name="param_gui" pkg="rqt_reconfigure" type="rqt_reconfigure"  output="screen"></node>
+    
+</launch>

@@ -1,0 +1,5 @@
+int64 source # 0, 1 or 2
+int64 dest # 0, 1 or 2
+int64 n_disks_below
+---
+bool disk_correctly_moved

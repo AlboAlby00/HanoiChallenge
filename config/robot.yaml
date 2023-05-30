@@ -1,0 +1,21 @@
+open_gripper:
+  width: 0.06
+  speed: 0.01
+grasp:
+  epsilon_inner: 0.01
+  epsilon_outer: 0.02
+  force: 20
+  speed: 0.1
+  width: 0.015
+move:
+  speed: 0.3
+  force_limit: 20
+  elbow: 0
+
+
+
+
+
+
+
+

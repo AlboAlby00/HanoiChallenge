@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<launch>
+    <group ns="robotParam">
+        <rosparam file="$(find my_robot_control)/config/robot.yaml" />
+    </group>
+      <group ns="pickAndPlace">
+     <rosparam file="$(find my_robot_control)/config/pickandplace.yaml" />
+    </group>
+
+    <node name="high_level_service_real" pkg="my_robot_control" type="high_level_service_real"  output="screen"></node>
+
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="align_depth" value="true"/>
+        <arg name="filters" value="pointcloud"/>
+    </include>
+
+</launch>
